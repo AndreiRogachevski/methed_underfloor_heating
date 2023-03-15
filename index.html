@@ -11,16 +11,100 @@
   </head>
   <body>
     <header class="header">
+      <h1 class="visually-hidden">Тёплый пол в каждый дом</h1>
       <div class="container header__container">
         <img
           class="header__logo"
           src="img/logo.svg"
           alt="Логотип с солнышком и текстом тёплый пол"
         />
-        <button class="header__button">заказать</button>
+        <button class="button header__button">заказать</button>
       </div>
     </header>
-    <footer class="footer">
+
+    <main>
+      <section class="hero section-offset">
+        <div class="container hero__container">
+          <div class="hero__content gray-block">
+            <h2 class="hero__title">Приносим тепло в&nbsp;каждый дом</h2>
+            <p class="hero__description">
+              Устанавливаем теплые полы в&nbsp;квартирах, офисах
+              и&nbsp;загородных домах.
+            </p>
+            <a href="#calc" class="button link hero__link"
+              >Рассчитать&nbsp;стоимость</a
+            >
+          </div>
+          <div class="hero__slider-wrapper">
+            <div class="filling">
+              <div class="filling">
+                <div
+                  class="filling hero__image"
+                  style="background-image: url('./img/hero_img_01.jpg')"
+                ></div>
+              </div>
+              <button class="hero__slider-btn hero__slider-btn_prev"></button>
+              <button class="hero__slider-btn hero__slider-btn_next"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantges section-offset">
+        <div class="container advantges__container">
+          <h2 class="advantges__title">Наши преимущества</h2>
+          <ul class="advantages__list list-reset">
+            <li class="advantages__item">Надежные материалы</li>
+            <li class="advantages__item">опытные монтажники</li>
+            <li class="advantages__item">Регулируемая температура пола</li>
+            <li class="advantages__item">Защита от замыканий</li>
+            <li class="advantages__item">Гарантия до 10 лет</li>
+          </ul>
+        </div>
+      </section>
+      <section class="calc section-offset" id="'calc">
+        <div class="container calc__container">
+          <div class="calc__content gray-blok">
+            <h2 class="calc__title">Рассчитайте стоимость</h2>
+            <form class="calc__form">
+              <fieldset class="calc__fieldset calc__fieldset_size">
+                <label class="calc__wrapper-input calc__wrapper-input-size">
+                  <span class="calc__text">Ширина помещения, м</span>
+                  <input
+                    class="calc__input-number"
+                    type="number"
+                    name="width"
+                  />
+                </label>
+                <label class="calc__wrapper-input calc__wrapper-input-size">
+                  <span class="calc__text">Длина помещения, м</span>
+                  <input
+                    class="calc__input-number"
+                    type="number"
+                    name="length"
+                  />
+                </label>
+              </fieldset>
+              <fieldset class="calc__fieldset calc__fieldset_tariff">
+                <label
+                  class="calc__wrapper-input calc__wrapper-input-tariff"
+                ></label>
+                <label
+                  class="calc__wrapper-input calc__wrapper-input-tariff"
+                ></label>
+                <label
+                  class="calc__wrapper-input calc__wrapper-input-tariff"
+                ></label>
+              </fieldset>
+              <button type="submit" class="button calc__submit">
+                Рассчитать
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-offset">
       <div class="container footer__container">
         <img
           class="footer__logo"
@@ -29,7 +113,7 @@
         />
         <ul class="footer__list footer__social list-reset">
           <li class="footer__item">
-            <a href="#" class="footer__link link-reset"
+            <a href="#" class="footer__link link"
               ><svg
                 width="25"
                 height="24"
@@ -45,7 +129,7 @@
             </a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link link-reset"
+            <a href="#" class="footer__link link"
               ><svg
                 width="24"
                 height="24"
@@ -63,7 +147,9 @@
         </ul>
         <ul class="footer__list footer__contact list-reset">
           <li class="footer__item">
-            <a href="tel:+78588497380" class="footer__link link-reset"
+            <a
+              href="tel:+78588497380"
+              class="footer__link link footer__link_contact"
               ><svg
                 width="24"
                 height="24"
@@ -82,7 +168,9 @@
             </a>
           </li>
           <li class="footer__item">
-            <a href="mailto:Teplyipol@gmail.com" class="footer__link link-reset"
+            <a
+              href="mailto:Teplyipol@gmail.com"
+              class="footer__link link footer__link_contact"
               ><svg
                 width="24"
                 height="24"
@@ -121,7 +209,7 @@
             Designer:
             <a
               href="https://t.me/Mrshmallowww"
-              class="footer__link link-reset"
+              class="footer__link link"
               target="_blank"
               >Anastasia Ilina</a
             >
@@ -131,7 +219,7 @@
             Developer:
             <a
               href="https://t.me/AnDronDev"
-              class="footer__link link-reset"
+              class="footer__link link"
               target="_blank"
               >Andrei Rogachevski</a
             >
