@@ -26,6 +26,8 @@
   color: #232020;
 }
 .footer__link {
+  display: inline-block;
+  line-height: 0;
 }
 .footer__link_contact {
   display: flex;
