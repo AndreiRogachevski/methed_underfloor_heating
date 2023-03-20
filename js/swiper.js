@@ -1,4 +1,4 @@
-new Swiper('.hero__slider', {
+const swiper = new Swiper('.hero__slider', {
   slidesPerView: 2,
   spaceBetween: 10,
   loop: true,
@@ -9,5 +9,13 @@ new Swiper('.hero__slider', {
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    560: {
+      spaceBetween: 8,
+    },
   },
 });
